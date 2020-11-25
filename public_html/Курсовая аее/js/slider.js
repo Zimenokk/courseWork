@@ -1,9 +1,9 @@
 new Swiper('.image-slider', {
     // стрелки
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
-    },
+    // navigation: {
+    //     nextEl: '.swiper-button-next',
+    //     prevEl: '.swiper-button-prev'
+    // },
     //Навигация
     //Буллеты, текущее положение, прогрессбар
     pagination: {
