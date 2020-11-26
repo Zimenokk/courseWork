@@ -651,7 +651,12 @@
  }
  
  .itemsBasket {
-     height: 430px;
+     background-color: #fff;
+     display: flex;
+     flex-direction: column;
+     padding: 2%;
+     margin-top: 3%;
+     overflow: auto;
  }
  
  .basket {
@@ -659,7 +664,7 @@
      display: flex;
      flex-direction: column;
      background-color: #F6F6F6;
-     height: 640px;
+     height: 630px;
  }
  
  .innerBasket {
@@ -674,7 +679,7 @@
  
  .promocod {
      border: none;
-     width: 94.5%;
+     width: 95%;
      outline: none;
      border: 0;
      padding: 3% 2% 3% 3%;
@@ -740,17 +745,28 @@
  /* Товары в корзине_____________________ */
  
  .allItemsBasket {
-     height: 450px;
+     height: 415px;
+     overflow: scroll;
+     margin: 2% auto;
  }
  
- .itemsBasket {
-     background-color: #fff;
-     display: flex;
-     height: 91px;
-     display: flex;
-     flex-direction: column;
-     padding: 2%;
-     margin-top: 3%;
+ ::-webkit-scrollbar {
+     width: 0px;
+     /* ширина для вертикального скролла */
+     height: 0px;
+     /* высота для горизонтального скролла */
+     background-color: #143861;
+ }
+ /* ползунок скроллбара */
+ 
+ ::-webkit-scrollbar-thumb {
+     background-color: #843465;
+     border-radius: 9em;
+     box-shadow: inset 1px 1px 10px #f3faf7;
+ }
+ 
+ ::-webkit-scrollbar-thumb:hover {
+     background-color: #4d4d4d;
  }
  
  .upperBasketItems {
@@ -758,7 +774,7 @@
  }
  
  .upperBasketItems>p {
-     height: 55px;
+     height: 45px;
      font-size: 1.3rem;
  }
  
@@ -767,20 +783,60 @@
      flex-direction: row;
      justify-content: space-between;
      align-items: center;
+     margin-top: 3%;
+     font-size: 1.3rem;
  }
  
  .downBasketItems>img:nth-child(1) {
-     width: 40px;
+     width: 45px;
  }
  
  .downBasketItems>img:nth-child(2n) {
-     height: 4px;
+     height: 3px;
      width: 25px;
-     border-radius: 10px;
-     -webkit-border-radius: 10px;
-     -moz-border-radius: 10px;
-     -ms-border-radius: 10px;
-     -o-border-radius: 10px;
+     border-radius: 20px;
+     -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+     -ms-border-radius: 20px;
+     -o-border-radius: 20px;
+ }
+ 
+ .finalInfo {
+     border-top: 2.5px solid black;
+     display: flex;
+     flex-direction: column;
+     padding: 3% 2% 2% 2%;
+ }
+ 
+ .allPriceBasket {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     margin-bottom: 5%;
+ }
+ 
+ .finalInfo>a {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     background-color: #7fd62e;
+     border: 1px solid #7fd62e;
+     height: 35px;
+     border-radius: 20px;
+     -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+     -ms-border-radius: 20px;
+     -o-border-radius: 20px;
+ }
+ 
+ .finalInfo>a:hover {
+     box-shadow: 0 0 10px 0 rgb(228, 228, 228);
+ }
+ 
+ .allPriceBasket span {
+     font-weight: 600;
+     color: #2a2a2a;
  }
  /* ПРАВЫЙ КАТАЛОГ_______________________________________ */
  
@@ -841,7 +897,7 @@
  
  .itemPriceCatalog {
      padding-top: 23%;
-     width: 110%;
+     width: 127%;
  }
  
  .allPricesCatalog span {
@@ -893,5 +949,5 @@
  .actCatPrice {
      color: #FF2222;
      margin-top: 1%;
-     width: 110%;
+     width: 127%;
  }
