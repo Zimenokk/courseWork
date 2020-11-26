@@ -19,11 +19,11 @@ new Swiper('.image-slider', {
     },
     spaceBetween: 30,
     loop: true,
-    // autoplay: {
-    //     delay: 6000,
-    //     stopOnLastSlide: false,
-    //     disableOnInteraction: false
-    // }
+    autoplay: {
+        delay: 6000,
+        stopOnLastSlide: false,
+        disableOnInteraction: false
+    }
 
 });
 // Скролл
