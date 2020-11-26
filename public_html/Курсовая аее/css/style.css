@@ -802,7 +802,7 @@
  }
  
  .finalInfo {
-     border-top: 2.5px solid black;
+     border-top: 2px solid black;
      display: flex;
      flex-direction: column;
      padding: 3% 2% 2% 2%;
