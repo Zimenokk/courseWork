@@ -359,7 +359,7 @@
  /* PERCENT______________________________________________________________ */
  
  .percent {
-     margin-top: 5%;
+     margin: 8%;
  }
  
  .innerPercent {
@@ -398,6 +398,10 @@
      justify-content: space-around;
      font-size: 2rem;
      margin-top: 4%;
+ }
+ 
+ .upAbout>p {
+     border-bottom: 4px solid black;
  }
  
  .downAbout {
@@ -549,6 +553,7 @@
  
  .downAbout3 div {
      margin-bottom: 10%;
+     margin-right: 2%;
  }
  
  .leftDownAbout3 {
@@ -751,6 +756,7 @@
  
  .upperBasketItems>p {
      height: 55px;
+     font-size: 1.3rem;
  }
  
  .downBasketItems {
@@ -765,8 +771,13 @@
  }
  
  .downBasketItems>img:nth-child(2n) {
-     height: 3px;
+     height: 4px;
      width: 25px;
+     border-radius: 10px;
+     -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+     -ms-border-radius: 10px;
+     -o-border-radius: 10px;
  }
  /* ПРАВЫЙ КАТАЛОГ_______________________________________ */
  
