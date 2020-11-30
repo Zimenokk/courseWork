@@ -28,6 +28,26 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/header_footer.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+         ::-webkit-scrollbar {
+            width: 0px;
+            /* ширина для вертикального скролла */
+            height: 0px;
+            /* высота для горизонтального скролла */
+            background-color: #143861;
+        }
+        /* ползунок скроллбара */
+        
+         ::-webkit-scrollbar-thumb {
+            background-color: #843465;
+            border-radius: 5em;
+            box-shadow: inset 1px 1px 10px #f3faf7;
+        }
+        
+         ::-webkit-scrollbar-thumb:hover {
+            background-color: #4d4d4d;
+        }
+    </style>
 </head>
 
 <body>
@@ -40,8 +60,8 @@
                 </div>
                 <div class="right_header">
                     <ul class="header_list">
-                        <li><a href="#mainSales">Акції</a></li>
                         <li><a href="index_katalog.html">Каталог</a></li>
+                        <li><a href="#mainSales">Акції</a></li>
                         <li><a href="#mainHits">Хіти продаж</a></li>
                         <li><a href="#mainRuller">Рулетка</a></li>
                         <li><a href="#mainAbout">Про нас</a></li>
@@ -348,7 +368,7 @@
                 </div>
             </div>
         </div>
-        <!-- <footer class="footer ">
+        <footer class="footer ">
             <div class="container ">
                 <div class="innerFooter ">
                     <div class="upFooter ">
@@ -403,7 +423,7 @@
                     </div>
                 </div>
             </div>
-        </footer> -->
+        </footer>
     </div>
 </body>
 

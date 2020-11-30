@@ -36,6 +36,27 @@
      text-align: center;
      width: 100%;
  }
+ /* SCROLL________________________ */
+ 
+ ::-webkit-scrollbar {
+     width: 10px;
+     /* ширина для вертикального скролла */
+     height: 0px;
+     /* высота для горизонтального скролла */
+     background-color: #212121;
+ }
+ /* ползунок скроллбара */
+ 
+ ::-webkit-scrollbar-thumb {
+     background-color: rgb(255, 246, 246);
+     border-radius: 9em;
+     box-shadow: inset 1px 1px 10px #ffffff;
+ }
+ 
+ ::-webkit-scrollbar-thumb:hover {
+     background-color: ;
+ }
+ /* SCROLL________________________ */
  /* __________________________________________________________________________________
                              
                                 LANDING PAGE
@@ -84,12 +105,22 @@
      -ms-border-radius: 40px;
      -o-border-radius: 40px;
      margin-top: 1%;
+     transition: 1s;
+     -webkit-transition: 1s;
+     -moz-transition: 1s;
+     -ms-transition: 1s;
+     -o-transition: 1s;
  }
  
  .preview p:hover {
      background: white;
      opacity: 0.8;
      color: black;
+     transition: .2s ease-in-out all;
+     -webkit-transition: .2s ease-in-out all;
+     -moz-transition: .2s ease-in-out all;
+     -ms-transition: .2s ease-in-out all;
+     -o-transition: .2s ease-in-out all;
  }
  
  .preview p:hover .goCat {
@@ -379,6 +410,11 @@
      text-align: left;
  }
  
+ .right_Percent {
+     display: flex;
+     align-items: center;
+ }
+ 
  .right_Percent img {
      text-align: right;
  }
@@ -648,6 +684,7 @@
      width: 100%;
      display: flex;
      flex-direction: row;
+     margin-bottom: 5%;
  }
  
  .itemsBasket {
@@ -748,25 +785,6 @@
      height: 415px;
      overflow: scroll;
      margin: 2% auto;
- }
- 
- ::-webkit-scrollbar {
-     width: 0px;
-     /* ширина для вертикального скролла */
-     height: 0px;
-     /* высота для горизонтального скролла */
-     background-color: #143861;
- }
- /* ползунок скроллбара */
- 
- ::-webkit-scrollbar-thumb {
-     background-color: #843465;
-     border-radius: 9em;
-     box-shadow: inset 1px 1px 10px #f3faf7;
- }
- 
- ::-webkit-scrollbar-thumb:hover {
-     background-color: #4d4d4d;
  }
  
  .upperBasketItems {
@@ -951,3 +969,42 @@
      margin-top: 1%;
      width: 127%;
  }
+ /* Адаптив_____________________________________________________________________ */
+ 
+ @media (min-width: 1200px) {}
+ /* Portrait tablets and medium desktops */
+ 
+ @media (min-width: 992px) and (max-width: 1199px) {
+     .innerPercent>h2 {
+         font-size: 2.5rem;
+     }
+     .right_Percent>img {
+         width: 90%;
+     }
+ }
+ /* Portrait tablets and small desktops */
+ 
+ @media (min-width: 768px) and (max-width: 991px) {
+     .innerPercent>h2 {
+         font-size: 2.5rem;
+     }
+     .right_Percent>img {
+         width: 90%;
+     }
+ }
+ /* Landscape phones and portrait tablets */
+ 
+ @media (max-width: 768px) {
+     .innerPercent>h2 {
+         font-size: 2.5rem;
+     }
+     .right_Percent>img {
+         width: 90%;
+     }
+     .right_Percent {}
+ }
+ /* Landscape phones and smaller */
+ 
+ @media (max-width: 480px) {}
+ 
+ @media (max-width: 650) {}
